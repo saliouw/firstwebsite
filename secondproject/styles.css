@@ -1,7 +1,7 @@
 ﻿body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px;
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
@@ -19,19 +19,19 @@
 }
 
     .hero-text h1 {
-        font-size: 2em;
+        font-size: 3em;
         color: #2c3e50;
         margin-bottom: 10px;
     }
 
     .hero-text p {
-        font-size: 1.2em;
+        font-size: 2em;
         color: #555;
     }
 
 .hero img {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #ddd;
@@ -47,3 +47,109 @@
             margin-top: 20px;
         }
 }
+/* Container setup */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header flex layout */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo-circle {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+    nav a {
+        text-decoration: none;
+        color: #2c3e50;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+        nav a:hover {
+            color: orangered; /* Or any highlight color like gold */
+        }
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* why korarush section*/
+.why-korarush {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+    .why-korarush img {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px; /* optional for rounded corners */
+        flex-shrink: 0;
+    }
+
+    .why-korarush .text-content {
+        max-width: 600px;
+    }
+
+    .why-korarush h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .why-korarush p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    /*Learn more button*/
+.learn-more-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: orangered; /* Gold tone */
+    color: #f9f9f9;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+    .learn-more-btn:hover {
+        background-color: green;
+    }
