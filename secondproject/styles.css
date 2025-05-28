@@ -153,3 +153,44 @@ nav {
     .learn-more-btn:hover {
         background-color: green;
     }
+    /*colum section*/
+.features-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-card {
+    flex: 1 1 300px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-card img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+    }
+
+    .feature-card h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #222;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+        color: #555;
+    }
