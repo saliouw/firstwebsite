@@ -14,7 +14,10 @@
             <a href="index.html" class="logo-circle">
                 <img src="images/koralogo.png" alt="korarush logo" class="logo" />
             </a>
-            <nav>
+            <!-- Hamburger icon -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <!-- Nav menu -->
+            <nav id="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="menu-bar/services.html">Services</a>
                 <a href="menu-bar/aboutus.html">About Us</a>
@@ -25,12 +28,14 @@
         </div>
     </header>
     <!-- content below header and banner image in circle-->
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Fresh African groceries delivered to your door from your favorite stores </h1>
-            <p>Order now and enjoy same-day delivery in Cincinnati!</p>
-        </div>
-        <img src="images/delivery.png" alt="grocery deliveries" />
+    <div class="hero-container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Shop African Groceries Online and Get Same-Day Delivery from Local Stores </h1>
+                <p>Order now from your favorite African Stores online and have fresh groceries delivered same-day to your home, anywhere in Cincinnati. <br/>quick, easy, and reliable.</p>
+            </div>
+            <img src="images/delivery.png" alt="grocery deliveries" />
+        </section>
     </div>
 
     <!-- content below banner-->
@@ -51,7 +56,28 @@
             <a href="menu-bar/services.html" class="learn-more-btn">Learn More</a>
 
         </div>
+
     </div>
+    <!--Why KoraRush Section-->
+    <section class="why-korarush">
+        <div class="info-image">
+            <img src="images/shopping.png" alt="women shopping at a super-market">
+        </div>
+        <div class="info-text">
+            <h2>Why Choose KoraRush?</h2>
+            <p>
+                Fast, fresh, and convenient—KoraRush brings your favorite African groceries straight to your door.
+                We’re not just a delivery service—we’re a trusted connection to the ingredients and flavors that feel like home.
+                From local favorites to hard-to-find essentials, we’ve got you covered with reliable same-day delivery options. <br><br>
+                Rooted in the community, KoraRush is proudly bilingual and dedicated to excellent service.
+                Whether you’re restocking your pantry or preparing for a special gathering, shopping with KoraRush means saving time,
+                supporting local vendors, and enjoying fresh products with a personal touch.
+            </p>
+            <a href="menu-bar/services.html" class="learn-more-btn">Learn More</a>
+        </div>
+    </section>
+
+
     <!-- Creating 3 sections-->
     <section class="features-section">
         <div class="feature-card">
@@ -70,6 +96,16 @@
             <p>We’re based in Cincinnati and know our community.</p>
         </div>
     </section>
+
+    <!-- Java scripts - will move late to js file-->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
 
 
 </body>
