@@ -1,0 +1,538 @@
+WEBVTT
+
+1
+00:00:03.890 --> 00:00:06.585
+I will provide you some files
+
+2
+00:00:06.585 --> 00:00:09.200
+and if you did the
+optional set of video,
+
+3
+00:00:09.200 --> 00:00:12.080
+you've already had those
+files up and ready to go.
+
+4
+00:00:12.080 --> 00:00:15.120
+If you decided to skip
+that, that's fine.
+
+5
+00:00:15.120 --> 00:00:16.860
+You can use the provided files.
+
+6
+00:00:16.860 --> 00:00:19.220
+You should get this zipped file
+
+7
+00:00:19.220 --> 00:00:22.290
+for the font test files here.
+
+8
+00:00:22.290 --> 00:00:25.365
+On Windows don't forget
+that you have to unzip it.
+
+9
+00:00:25.365 --> 00:00:27.480
+Windows will make
+it look like you
+
+10
+00:00:27.480 --> 00:00:29.240
+can access it by
+double-clicking it,
+
+11
+00:00:29.240 --> 00:00:31.220
+but it won't actually
+work properly.
+
+12
+00:00:31.220 --> 00:00:34.500
+You have to actually unzip
+it by right-clicking and
+
+13
+00:00:34.500 --> 00:00:38.130
+choosing Extract All.
+I have to do that.
+
+14
+00:00:38.130 --> 00:00:41.050
+On the Mac, all you have to
+do is double-click it and it
+
+15
+00:00:41.050 --> 00:00:44.500
+will automatically
+unzip, which is great.
+
+16
+00:00:44.500 --> 00:00:47.130
+Once I've zipped that,
+
+17
+00:00:47.130 --> 00:00:52.710
+I can throw this trash the
+zip file in the trash and I'm
+
+18
+00:00:52.710 --> 00:00:54.850
+working with this one
+and you can open up
+
+19
+00:00:54.850 --> 00:00:56.970
+these files in your code editor
+
+20
+00:00:56.970 --> 00:00:59.770
+and work with them
+if you want to.
+
+21
+00:01:00.370 --> 00:01:03.090
+Alternatively, what I'm going
+
+22
+00:01:03.090 --> 00:01:04.210
+to be doing is I'm going to be
+
+23
+00:01:04.210 --> 00:01:07.610
+working with those same files
+inside my website here,
+
+24
+00:01:07.610 --> 00:01:12.360
+this font test folder here
+so as to not get confused.
+
+25
+00:01:12.360 --> 00:01:15.130
+I'm going to throw this folder
+
+26
+00:01:15.130 --> 00:01:16.590
+away because I'm just not
+
+27
+00:01:16.590 --> 00:01:18.470
+going to be using that
+one for right now.
+
+28
+00:01:18.470 --> 00:01:20.430
+I'm going to use them
+inside this folder but you
+
+29
+00:01:20.430 --> 00:01:23.180
+can work on it locally on
+your desktop if you want.
+
+30
+00:01:23.180 --> 00:01:26.635
+Let's talk about
+fonts on the web.
+
+31
+00:01:26.635 --> 00:01:30.310
+Generally speaking, when
+you create a website and
+
+32
+00:01:30.310 --> 00:01:35.290
+you use some styles to add
+some fonts to your page,
+
+33
+00:01:35.290 --> 00:01:39.770
+then the fonts are going
+to get loaded from
+
+34
+00:01:39.770 --> 00:01:42.490
+the local computer
+that you're working
+
+35
+00:01:42.490 --> 00:01:45.950
+on or that somebody is
+viewing your website from.
+
+36
+00:01:45.950 --> 00:01:48.270
+If somebody comes
+to your website,
+
+37
+00:01:48.270 --> 00:01:52.140
+it's going to say use
+whichever font you've
+
+38
+00:01:52.140 --> 00:01:53.850
+chosen and if it's on
+
+39
+00:01:53.850 --> 00:01:56.130
+that local computer,
+it will display it.
+
+40
+00:01:56.130 --> 00:01:58.690
+If that font is not on
+that local computer,
+
+41
+00:01:58.690 --> 00:02:02.080
+the local computer will
+substitute a different font.
+
+42
+00:02:02.080 --> 00:02:04.150
+Because of that, we've
+
+43
+00:02:04.150 --> 00:02:06.850
+had a limited set of
+fonts that we can
+
+44
+00:02:06.850 --> 00:02:12.130
+reliably be fairly certain
+are on most computers.
+
+45
+00:02:12.130 --> 00:02:17.595
+These fonts include
+Aerial, Verdana,
+
+46
+00:02:17.595 --> 00:02:20.730
+Georgia, Times New Roman,
+
+47
+00:02:20.730 --> 00:02:24.525
+Courier, maybe a few others.
+
+48
+00:02:24.525 --> 00:02:27.390
+There's very few.
+For a long time,
+
+49
+00:02:27.390 --> 00:02:30.410
+we were really limited to
+the fonts that we could use.
+
+50
+00:02:30.410 --> 00:02:32.970
+In the previous videos,
+
+51
+00:02:32.970 --> 00:02:38.570
+we talked about the
+font-face CSS module,
+
+52
+00:02:38.570 --> 00:02:40.790
+which allows us to
+
+53
+00:02:40.790 --> 00:02:42.870
+download and use fonts
+
+54
+00:02:42.870 --> 00:02:45.130
+locally on the computer
+from the Internet,
+
+55
+00:02:45.130 --> 00:02:46.875
+which is super useful.
+
+56
+00:02:46.875 --> 00:02:49.660
+In this lesson, we'll be looking
+
+57
+00:02:49.870 --> 00:02:53.390
+at how to actually do that.
+
+58
+00:02:54.070 --> 00:02:56.790
+To get started with this,
+
+59
+00:02:56.790 --> 00:02:59.540
+we need a font that we can use.
+
+60
+00:02:59.540 --> 00:03:03.780
+We're going to use this
+Freight Round font
+
+61
+00:03:03.780 --> 00:03:05.670
+and this is another
+file that I will
+
+62
+00:03:05.670 --> 00:03:08.950
+provide for you that
+you can work with.
+
+63
+00:03:11.240 --> 00:03:14.390
+This typeface was created by
+
+64
+00:03:14.390 --> 00:03:17.630
+a friend and colleague of
+mine named Robbie Woodard.
+
+65
+00:03:17.630 --> 00:03:21.110
+He owns the font
+and I asked him,
+
+66
+00:03:21.110 --> 00:03:24.310
+could I use this
+font in my lessons
+
+67
+00:03:24.310 --> 00:03:26.150
+to teach people about
+
+68
+00:03:26.150 --> 00:03:28.270
+creating web fonts and
+working with web fonts,
+
+69
+00:03:28.270 --> 00:03:30.415
+and he gave me
+permission to do that.
+
+70
+00:03:30.415 --> 00:03:33.610
+I have permission from
+the person who owns
+
+71
+00:03:33.610 --> 00:03:37.050
+the fonts to do this
+with you and for
+
+72
+00:03:37.050 --> 00:03:41.090
+you to use these fonts and to
+work with them in this way.
+
+73
+00:03:41.090 --> 00:03:42.730
+It's important to mention that
+
+74
+00:03:42.730 --> 00:03:46.345
+because fonts are
+licensed generally.
+
+75
+00:03:46.345 --> 00:03:49.150
+When you purchase a font,
+
+76
+00:03:49.150 --> 00:03:50.910
+when you get a font
+from somewhere,
+
+77
+00:03:50.910 --> 00:03:52.910
+you're getting a
+license to use it.
+
+78
+00:03:52.910 --> 00:03:55.870
+You're not actually
+buying the font.
+
+79
+00:03:55.870 --> 00:03:58.170
+You're buying the
+license to use it.
+
+80
+00:03:58.170 --> 00:04:00.610
+Those licenses can
+come with restrictions
+
+81
+00:04:00.610 --> 00:04:04.990
+about where and when and
+how that font can be used.
+
+82
+00:04:04.990 --> 00:04:08.410
+Because I know the creator
+
+83
+00:04:08.410 --> 00:04:10.170
+of this font and he
+gave us permission,
+
+84
+00:04:10.170 --> 00:04:14.370
+we're okay to do this with
+this particular font,
+
+85
+00:04:14.370 --> 00:04:17.610
+but depending on where
+you get your fonts,
+
+86
+00:04:17.610 --> 00:04:19.250
+you may or may not have
+
+87
+00:04:19.250 --> 00:04:22.890
+the license in order to
+be able to use them.
+
+88
+00:04:22.890 --> 00:04:26.990
+I'm going to provide you with
+these files for this font
+
+89
+00:04:26.990 --> 00:04:32.520
+and you'll see here if
+I unzip the font again,
+
+90
+00:04:32.520 --> 00:04:34.660
+I'm going to Extract All.
+
+91
+00:04:37.400 --> 00:04:40.240
+Once again I've got a folder
+
+92
+00:04:40.240 --> 00:04:41.890
+here for macOS. I don't need.
+
+93
+00:04:41.890 --> 00:04:43.750
+I can just trash that.
+
+94
+00:04:43.750 --> 00:04:46.560
+But these are OTF files.
+
+95
+00:04:46.560 --> 00:04:49.775
+OTF stands for OpenType format.
+
+96
+00:04:49.775 --> 00:04:55.700
+The OpenType format became
+popular in the early 2000s,
+
+97
+00:04:55.700 --> 00:04:57.420
+and it has a lot of
+
+98
+00:04:57.420 --> 00:05:00.275
+potential glyphs inside
+of an OpenType format.
+
+99
+00:05:00.275 --> 00:05:03.460
+Plus it's cross-platform
+for both Mac and Windows.
+
+100
+00:05:03.460 --> 00:05:06.055
+If I were to double click
+on these typefaces,
+
+101
+00:05:06.055 --> 00:05:10.920
+you would see I'd be able
+to add them right into
+
+102
+00:05:12.230 --> 00:05:15.950
+the system for this computer
+and I could use them in
+
+103
+00:05:15.950 --> 00:05:18.770
+Microsoft Word or
+whatever applications
+
+104
+00:05:18.770 --> 00:05:21.230
+where I can select fonts.
+
+105
+00:05:21.230 --> 00:05:24.570
+I'd be able to use
+these fonts here.
+
+106
+00:05:24.650 --> 00:05:28.610
+That's really cool
+that you can do that.
+
+107
+00:05:28.610 --> 00:05:33.090
+The other popular format
+for fonts is TTF,
+
+108
+00:05:33.090 --> 00:05:34.780
+which is TrueType fonts.
+
+109
+00:05:34.780 --> 00:05:39.070
+TrueType was originally
+developed by Apple in order
+
+110
+00:05:39.070 --> 00:05:43.590
+to get around Adobe
+licensing and
+
+111
+00:05:43.590 --> 00:05:49.650
+that's oversimplifying it but
+essentially Apple created
+
+112
+00:05:49.650 --> 00:05:53.380
+their own formats so they
+could distribute fonts on
+
+113
+00:05:53.380 --> 00:05:57.965
+their computers and Windows
+can follow suit with TTF,
+
+114
+00:05:57.965 --> 00:05:59.860
+but the OpenType format is
+
+115
+00:05:59.860 --> 00:06:05.560
+the newer format and it's
+really nice for fonts.
