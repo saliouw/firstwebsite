@@ -33,7 +33,7 @@
 
     .hero-text p {
         font-size: 1.5em;
-        color: #1e1e1e;
+        color: #333;
     }
 /* Image styles */
 .hero img {
@@ -68,9 +68,10 @@
 }
 /* Container setup */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  width:100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header flex layout */
@@ -78,6 +79,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 15px 0;
 }
 
 /* Logo styling */
@@ -141,13 +145,13 @@ nav {
     cursor: pointer;
 }
 
-/* Responsive styles */
-/* Mobile styles */
+/* Responsive styles - Mobile  */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
         margin-left: auto;
         z-index: 1001;
+        padding-bottom: 10px;
     }
 
     .header-flex {
@@ -193,8 +197,22 @@ nav {
         width: fit-content;
     }
 }
+/*hamburger align mobile*/
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    .logo-circle img {
+        height: 80px; /* adjust as needed */
+    }
 
+    .hamburger {
+        font-size: 2rem;
+    }
+}
 
 /* why korarush section*/
 .why-korarush {
@@ -281,7 +299,7 @@ nav {
 }
 
     .track-btn:hover {
-        background-color: #169e5e;
+        background-color: orangered;
     }
 
 
@@ -438,6 +456,7 @@ nav {
     .learn-more-btn:hover {
         background-color: #106a26;
     }
+/*mobile styling*/
 @media (max-width: 768px) {
     .partners {
         padding: 60px 20px;
@@ -475,7 +494,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     gap: 40px;
 }
@@ -513,11 +532,16 @@ nav {
     display: inline-block;
     margin-right: 10px;
 }
-
-.social-icons img {
-    width: 20px;
-    height: 20px;
+.social-icons {
+    margin-top: 10px;
 }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
 
 .footer-bottom {
     text-align: center;
@@ -540,3 +564,5 @@ nav {
         margin-bottom: 20px;
     }
 }
+
+
