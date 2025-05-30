@@ -26,6 +26,7 @@ nav ul li a {
     text-decoration: none;
     margin-bottom: 2px;
 }
+/*where.html - styling what i like page*/
 #food-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -42,7 +43,15 @@ nav ul li a {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
     }
-#work {
+    #food-gallery figcaption {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
+    }
+    /*work.html styling page*/
+    
+    #work {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -56,4 +65,28 @@ nav ul li a {
         object-fit: cover;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional styling */
+    }
+    /*My interests page*/
+#food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional styling */
+    border-radius: 12px; /* Optional styling */
+}
+
+    #food img {
+        width: 100%;
+        aspect-ratio: 9 / 10; /* maintains consistent width:height ratio */
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #food figcaption {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
     }

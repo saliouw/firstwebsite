@@ -110,6 +110,7 @@ nav {
     nav a {
         text-decoration: none;
         color: #f9f9f9;
+        margin-left: 20px;
         font-weight: bold;
         font-size: 1.1rem;
         background-color: orangered;
@@ -207,6 +208,29 @@ nav {
     .learn-more-btn:hover {
         background-color: green;
     }
+
+/* Back to Project button*/
+.back-btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.back-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #106a26; /* Green background */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+    .back-btn:hover {
+        background-color: #0c541f; /* Darker green on hover */
+    }
+
+
 
 /*why korarush 2nd version*/
 .info-section {
@@ -306,4 +330,19 @@ nav {
     .feature-card p {
         font-size: 1rem;
         color: #555;
+    }
+/*partner stores link*/
+.hero {
+    background-image: url('images/ship.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f9f9f9;
+    text-align: left;
+    padding: 100px 20px;
+    position: relative;
+}
+    .hero .container {
+        position: relative;
+        z-index: 2;
     }
