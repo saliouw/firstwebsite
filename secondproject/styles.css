@@ -1,4 +1,8 @@
-﻿body {
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -645,3 +649,121 @@ nav {
     line-height: 1.6;
 }
 /*about page*/
+.hero-about-info {
+    text-align: center;
+}
+.hero-about-info h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+    .hero-about-info p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+/*meet team section*/
+.about-team {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.container h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+.team-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 30px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+    .team-member img {
+        width: 100%;
+        max-width: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+/*services style*/
+.services-overview {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+    .services-overview h2 {
+        font-size: 2.5rem;
+        color: #1e3a1e;
+        margin-bottom: 10px;
+    }
+
+    .services-overview .intro-text {
+        max-width: 800px;
+        margin: 0 auto 40px;
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+.service-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+    .service-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .service-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+.service-content {
+    padding: 20px;
+}
+
+    .service-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #1a4314;
+    }
+
+    .service-content p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+    }
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1e3a1e;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .learn-more-btn:hover {
+        background-color: #29622a;
+    }
