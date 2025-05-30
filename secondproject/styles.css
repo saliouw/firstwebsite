@@ -413,6 +413,11 @@ nav {
     padding: 100px 20px;
     color: #f9f9f9;
     text-align: left;
+    height: 450px;
+    border-radius: 20px; /* ⬅️ Rounded edges */
+    overflow: hidden;
+    aspect-ratio: auto;
+    object-fit: cover;
 }
 
 .overlay {
@@ -432,13 +437,13 @@ nav {
 }
 
     .hero-content h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+        font-size: 3.5rem;
+        margin-bottom: 50px;
     }
 
     .hero-content p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
+        font-size: 2.1rem;
+        margin-bottom: 60px;
     }
 
 .hero-buttons {
@@ -446,6 +451,26 @@ nav {
     gap: 15px;
     flex-wrap: wrap;
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 60px 15px;
+        border-radius: 16px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
 /* Background images for different pages */
 .home-hero {
     background-image: url('images/delivery.png');
@@ -456,7 +481,7 @@ nav {
 }
 
 .services-hero {
-    background-image: url('images/services-bg.jpg');
+    background-image: url('images/shop.png');
 }
 .partners-hero {
     background-image: url('images/ship.png');
@@ -619,3 +644,4 @@ nav {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+/*about page*/
