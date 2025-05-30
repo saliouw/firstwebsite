@@ -38,7 +38,7 @@
 /* Image styles */
 .hero img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -206,7 +206,7 @@ nav {
     }
 
     .logo-circle img {
-        height: 80px; /* adjust as needed */
+        height: auto; /* adjust as needed */
     }
 
     .hamburger {
@@ -403,59 +403,98 @@ nav {
         font-size: 1rem;
         color: #555;
     }
+
 /*partner stores link*/
-.partners {
-    background-image: url('images/ship.png');
+.hero-container {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    text-align: left;
-    padding: 100px 20px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 400px; /* adjust as needed */
-    overflow: hidden;
+    padding: 100px 20px;
+    color: #f9f9f9;
+    text-align: left;
 }
 
-    /* Dark overlay */
-    .partners .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-        z-index: 1;
-    }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
 
-/* Text container */
-.partners-container {
+.hero-content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 700px;
 }
 
-/* Button styles */
+    .hero-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/* Background images for different pages */
+.home-hero {
+    background-image: url('images/delivery.png');
+}
+
+.about-hero {
+    background-image: url('images/market.png');
+}
+
+.services-hero {
+    background-image: url('images/services-bg.jpg');
+}
+.partners-hero {
+    background-image: url('images/ship.png');
+}
+
 .learn-more-btn {
-    display: inline-block;
-    margin-top: 15px;
-    margin-right: 10px;
-    padding: 10px 20px;
-    background-color: orangered;
-    color: white;
+    background-color: #106a26;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+    font-weight: 500;
     transition: background 0.3s ease;
 }
 
     .learn-more-btn:hover {
-        background-color: #106a26;
+        background-color: #17a866;
     }
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .learn-more-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /*mobile styling*/
 @media (max-width: 768px) {
     .partners {
@@ -567,6 +606,16 @@ nav {
 
 /*e-commerce solutions*/
 .commerce {
-    text-align: center;
-    font-size: 2rem;
+    text-align:center;
+}
+
+.commerce h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.commerce p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
