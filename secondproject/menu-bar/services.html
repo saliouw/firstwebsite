@@ -7,23 +7,78 @@
     <!-- In the <head> of all your pages -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
+    <script src="../script.js"></script>
 
 </head>
 <body>
     <header>
+        <div class="back-to-projects-bar">
+            <a href="../index.html">Back to Projects</a>
+        </div>
+
         <div class="container header-flex">
             <a href="index.html" class="logo-circle">
                 <img src="../images/koralogo.png" alt="korarush logo" class="logo" />
             </a>
-            <nav>
+
+            <!-- Hamburger icon -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <!-- Nav menu -->
+            <nav id="nav-menu" class="nav-hidden">
                 <a href="../index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="partners.html">Partner Stores</a>
                 <a href="contact.html">Contact</a>
                 <a href="../checkout.html">Checkout</a>
+                <a href="../track.html" class="track-btn">Track Shipment</a>
             </nav>
+
         </div>
+
     </header>
+
+    <!--Footer section-->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>KoraRush</h3>
+                <p>
+                    Fast, fresh, and convenient—KoraRush brings your favorite African groceries straight to your door.<br />
+                    We’re not just a delivery service—we’re a trusted connection to the ingredients and flavors that feel like home.<br>
+                    From local favorites to hard-to-find essentials, we’ve got you covered with reliable same-day delivery options. <br>
+                    Rooted in the community, KoraRush is proudly bilingual and dedicated to excellent service.<br />
+                    Whether you’re restocking your pantry or preparing for a special gathering, shopping with KoraRush means saving time,<br />
+                    supporting local vendors, and enjoying fresh products with a personal touch.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Partner Stores</a></li>
+                    <li><a href="#">Track Shipment</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: support@korarush.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="icons/twitter.svg" alt="Twitter" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KoraRush. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
