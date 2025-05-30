@@ -661,6 +661,10 @@ nav {
         font-size: 1.1rem;
         line-height: 1.6;
     }
+.container {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 /*meet team section*/
 .about-team {
     padding: 60px 20px;
@@ -690,6 +694,45 @@ nav {
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 10px;
+    }
+.card-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .info-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .info-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+.card-content {
+    padding: 20px;
+}
+
+    .card-content h3 {
+        margin-top: 0;
+        color: #1e3a1e;
+        font-size: 1.25rem;
+    }
+
+    .card-content p {
+        color: #444;
+        line-height: 1.6;
     }
 
 /*services style*/
