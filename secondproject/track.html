@@ -39,17 +39,19 @@
 
     </header>
     <!-- Track Shipment Page -->
-    <section class="track-hero">
+    <section class="hero-container" style="background-image: url('images/track-bg.png');">
         <div class="overlay"></div>
         <div class="track-hero-content">
             <h1>Track Your Shipment</h1>
             <p>Enter your tracking number below to get the latest status of your delivery.</p>
-            <form class="tracking-form">
-                <input type="text" placeholder="Enter Tracking Number" required />
-                <button type="submit" class="learn-more-btn">Track Shipment</button>
+            <form class="track-form">
+                <label for="tracking-number">Enter Tracking Number</label>
+                <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g., ACON12345678" required />
+                <button type="submit">Track Package</button>
             </form>
         </div>
     </section>
+    
 
     <!--Footer section-->
     <footer class="site-footer">
