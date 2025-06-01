@@ -1,11 +1,20 @@
 // JavaScript source code
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
 
-    hamburger.addEventListener('click', function () {
-        navMenu.classList.toggle('nav-hidden');
-        navMenu.classList.toggle('nav-visible');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollUpBtn.classList.add('show');
+        } else {
+            scrollUpBtn.classList.remove('show');
+        }
+    });
+
+    scrollUpBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 });
