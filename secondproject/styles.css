@@ -223,13 +223,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     padding: 2rem;
     flex-wrap: wrap; /* makes it responsive on smaller screens */
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem 0;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    
 }
 
     .why-korarush img {
-        width: 600px;
+        width: 100%;
         height: 400px;
         object-fit: cover;
         border-radius: 8px; /* optional for rounded corners */
@@ -1016,37 +1022,42 @@ nav {
     overflow: hidden;
     margin: 2rem 0;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+    
 }
 
     .business-card img {
         width: 100%;
         max-width: 500px;
-        height: 100%;
+        height: 400px;
         object-fit: cover;
         flex: 1 1 300px;
         min-height: 300px; /* Ensures taller images */
-        border-radius: 0; /* No rounding here to preserve layout */
+        border-radius: 8px; /* No rounding here to preserve layout */
+        flex-shrink:0;
     }
 
 .business-content {
-    flex: 1 1 300px;
-    padding: 2rem;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
-    min-height: 300px;
+    padding: 0;
 }
 
     .business-content h3 {
-        font-size: 1.8rem;
-        color: #1e3a1e;
+        
         margin: 0;
+        font-size: 3rem; /* Match Korarush h1 */
+        color: #2c3e50;
+        margin-bottom: 1rem;
     }
 
     .business-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #444;
         line-height: 1.6;
     }
@@ -1058,7 +1069,10 @@ nav {
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.3s ease;
+    width: fit-content; /* 🔧 Fix the width */
+    display: inline-block; /* 🔧 Ensures it sizes to content */
 }
+
 
     .learn-more-btn:hover {
         background-color: orangered;
