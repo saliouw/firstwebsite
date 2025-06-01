@@ -38,6 +38,42 @@
 
     </header>
 
+    <!-- Contact Us Page -->
+    <section class="hero-container" style="background-image: url('../images/contact.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>Have questions, feedback, or want to partner with us? We’d love to hear from you!</p>
+            <div class="hero-buttons">
+                <a href="mailto:info@acongroup.net" class="learn-more-btn">Email Us</a>
+                <a href="#name" class="learn-more-btn">Send us a message</a>
+            </div>
+        </div>
+    </section>
+    <!--contact form-->
+
+    <section class="contact-form-section">
+        <form class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" id="name" required />
+                <label for="name">Full Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email Address</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
     <!--Footer section-->
     <footer class="site-footer">
         <div class="footer-container">
@@ -79,6 +115,13 @@
         </div>
     </footer>
 
-
+    <!--scrollup function-->
+    <div class="scrollup" id="scrollUpBtn" title="Go to top">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <path d="M16 25.3337V6.66699" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6.66663 16.0003L16 6.66699L25.3333 16.0003" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Top</span>
+    </div>
 </body>
 </html>
