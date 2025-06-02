@@ -31,6 +31,7 @@
                 <a href="menu-bar/aboutus.html">About Us</a>
                 <a href="menu-bar/partners.html">Partner Stores</a>
                 <a href="menu-bar/contact.html">Contact</a>
+                <a href="shop.html">Shop Now</a>
                 <a href="checkout.html">Checkout</a>
                 <a href="track.html" class="track-btn">Track Shipment</a>
             </nav>
@@ -39,7 +40,57 @@
 
     </header>
 
+    <!-- Check out section-->
+    <section class="checkout-section">
+        <h2 class="section-title">Checkout</h2>
 
+        <div class="checkout-container">
+            <!-- Billing & Shipping Info -->
+            <form class="checkout-form">
+                <h3>Billing Details</h3>
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required />
+
+                <label>Email</label>
+                <input type="email" placeholder="john@example.com" required />
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 234 567 8900" required />
+
+                <label>Shipping Address</label>
+                <input type="text" placeholder="123 Main St, City, State, Zip" required />
+
+                <label>Payment Method</label>
+                <select required>
+                    <option value="">Select a method</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="cash">Cash on Delivery</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit" class="buy-btn">Place Order</button>
+            </form>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <ul>
+                    <li>
+                        <span>Plantains (2x)</span>
+                        <span>$5.00</span>
+                    </li>
+                    <li>
+                        <span>Egusi (1x)</span>
+                        <span>$7.50</span>
+                    </li>
+                    <li>
+                        <strong>Total</strong>
+                        <strong>$12.50</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <!--Footer section-->
     <footer class="site-footer">
         <div class="footer-container">
