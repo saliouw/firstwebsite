@@ -99,69 +99,82 @@
   }
 
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
-  
-  .hero::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-  }
-  
-  .hero .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .booking-form {
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    padding: 60px 20px;
+    min-height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  .booking-form h2 {
-    margin-top: 30px;
-    font-size: 20px;
-    color: #333;
-  }  
-  
-  .booking-form input,
-  .booking-form select {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    width: 200px;
-  }
-  
-  .booking-form button {
-    padding: 10px 20px;
-    background-color: #ff9900;
-    border: none;
-    border-radius: 5px;
+    align-items: center;
+}
+
+    .hero .container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #666;
+    }
+
+.booking-section {
+    margin-bottom: 20px;
+}
+
+    .booking-section h3 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+.booking-form label {
+    display: block;
+    margin-top: 15px;
     font-weight: bold;
+}
+
+
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.price-display {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.booking-form button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
     color: white;
+    font-size: 1.1em;
     cursor: pointer;
-  }
-  
+    width: 100%;
+}
+
+    .booking-form button:hover {
+        background-color: #0056b3;
+    }
+
   .services {
     background: #fff;
     padding: 50px 20px;
@@ -474,3 +487,9 @@
         .back-to-projects-bar a:hover {
             text-decoration: underline;
         }
+
+.price-display {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
