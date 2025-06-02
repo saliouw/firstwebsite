@@ -1,59 +1,61 @@
-﻿// JavaScript source code
-document.addEventListener("DOMContentLoaded", () => {
-    const cartList = document.getElementById("cart-list");
+﻿document.addEventListener("DOMContentLoaded", () => {
+    const cartItems = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
-    const clearCartBtn = document.getElementById("clear-cart");
+    const clearCartBtn = document.getElementById("clear-cart"); // Optional — if used
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     if (cart.length === 0) {
-        cartList.innerHTML = "<li>Your cart is empty.</li>";
-        clearCartBtn.style.display = "none";
+        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+        if (clearCartBtn) clearCartBtn.style.display = "none";
         return;
     }
 
     let total = 0;
+
     cart.forEach(item => {
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
 
-        const li = document.createElement("li");
-        li.innerHTML = `
-            <div class="cart-item">
-                <span><strong>${item.name}</strong></span>
-                <span>$${item.price.toFixed(2)} × 
-                    <button class="decrease" data-name="${item.name}">−</button>
-                    ${item.quantity}
-                    <button class="increase" data-name="${item.name}">+</button>
-                </span>
-                <span><strong>$${itemTotal.toFixed(2)}</strong></span>
-                <button class="remove-item" data-name="${item.name}">Remove</button>
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("cart-item");
+        itemDiv.innerHTML = `
+            <div><strong>${item.name}</strong></div>
+            <div>
+                $${item.price.toFixed(2)} × 
+                <button class="decrease" data-name="${item.name}">−</button>
+                ${item.quantity}
+                <button class="increase" data-name="${item.name}">+</button>
             </div>
-        `;
-        cartList.appendChild(li);
+            <div><strong>$${itemTotal.toFixed(2)}</strong></div>
+            <button class="remove-item" data-name="${item.name}">Remove</button>
+            <hr>`;
+        cartItems.appendChild(itemDiv);
     });
 
     cartTotal.textContent = total.toFixed(2);
 
-    // Quantity controls
-    document.querySelectorAll(".increase").forEach(btn => {
+    // Quantity control
+    cartItems.querySelectorAll(".increase").forEach(btn => {
         btn.addEventListener("click", () => updateQuantity(btn.dataset.name, 1));
     });
 
-    document.querySelectorAll(".decrease").forEach(btn => {
+    cartItems.querySelectorAll(".decrease").forEach(btn => {
         btn.addEventListener("click", () => updateQuantity(btn.dataset.name, -1));
     });
 
     // Remove item
-    document.querySelectorAll(".remove-item").forEach(btn => {
+    cartItems.querySelectorAll(".remove-item").forEach(btn => {
         btn.addEventListener("click", () => removeItem(btn.dataset.name));
     });
 
-    // Clear cart
-    clearCartBtn.addEventListener("click", () => {
-        localStorage.removeItem("cart");
-        location.reload();
-    });
+    // Optional: Clear entire cart
+    if (clearCartBtn) {
+        clearCartBtn.addEventListener("click", () => {
+            localStorage.removeItem("cart");
+            location.reload();
+        });
+    }
 
     function updateQuantity(name, delta) {
         cart = cart.map(item => {
