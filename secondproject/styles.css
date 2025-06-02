@@ -1533,3 +1533,40 @@ nav {
         width: 100%;
     }
 }
+
+/* ===============CART PAGE =============*/
+.cart-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    margin-bottom: 1rem;
+}
+
+    .cart-item h3 {
+        margin-bottom: 0.3rem;
+    }
+
+    .cart-item button {
+        margin: 0 5px;
+    }
+
+.cart-summary {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.checkout-btn {
+    background-color: green;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
