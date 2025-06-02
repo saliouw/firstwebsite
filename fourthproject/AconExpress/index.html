@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>State to State Car Booking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <!-- Back to Projects - top green bar -->
+        <div class="back-to-projects-bar">
+            <a href="../../index.html">Back to Projects</a>
+        </div>
+        <div class="container header-flex">
+            <a href="index.html" class="logo-circle">
+                <img src="images/aconlogo-tr.png" alt="RideConnect Logo" class="logo" />
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">How It Works</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact</a>
+                <a href="checkout.html">Checkout</a>
+            </nav>
+        </div>
+    </header>      
+  <section class="hero">
+    <div class="container">
+      <h2>Book a Ride Across States</h2>
+      <p>Fast, Comfortable, and Reliable Car Travel</p>
+      <form class="booking-form" action="checkout.html" method="get">
+        <select name="pickup" required>
+          <option value="">Pickup Location</option>
+          <option value="cincinnati">Cincinnati, OH</option>
+          <option value="columbus">Columbus, OH</option>
+          <option value="philadelphia">Philadelphia, PA</option>
+          <option value="illinois">Illinois</option>
+          <option value="newyork">New York, NY</option>
+          <option value="newjersey">New Jersey</option>
+          <option disabled>──────────</option>
+          <option disabled>Coming Soon</option>
+          <option disabled>California</option>
+          <option disabled>Florida</option>
+          <option disabled>Texas</option>
+          <option disabled>Georgia</option>
+        </select>
+      
+        <select name="destination" required>
+          <option value="">Destination Location</option>
+          <option value="cincinnati">Cincinnati, OH</option>
+          <option value="columbus">Columbus, OH</option>
+          <option value="philadelphia">Philadelphia, PA</option>
+          <option value="illinois">Illinois</option>
+          <option value="newyork">New York, NY</option>
+          <option value="newjersey">New Jersey</option>
+          <option disabled>──────────</option>
+          <option disabled>Coming Soon</option>
+          <option disabled>California</option>
+          <option disabled>Florida</option>
+          <option disabled>Texas</option>
+          <option disabled>Georgia</option>
+        </select>
+      
+        <input type="date" name="travelDate" required />
+      
+        <select name="rideType" required>
+          <option value="">Select Car Type</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="van">Van</option>
+        </select>
+      
+        <button type="submit">Book Now</button>
+    </form>         
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h3>Why Choose Us?</h3>
+      <div class="service-cards">
+        <div class="card">
+          <h4>Comfortable Cars</h4>
+          <p>Travel in clean, modern sedans and SUVs.</p>
+        </div>
+        <div class="card">
+          <h4>Affordable Pricing</h4>
+          <p>Transparent pricing with no hidden fees.</p>
+        </div>
+        <div class="card">
+          <h4>Flexible Scheduling</h4>
+          <p>Choose from available travel dates easily.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h3>Ready to hit the road?</h3>
+      <a href="file:///C:/Users/pauli/Desktop/AconExpress/checkout.html" class="cta-button">Book Your Ride</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 RideConnect. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

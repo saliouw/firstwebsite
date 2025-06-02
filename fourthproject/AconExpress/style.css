@@ -1,0 +1,476 @@
+/*Header design*/
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+.logo-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003366;
+    border-radius: 50%;
+    height: 145px;
+    width: 145px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .logo-circle {
+        height: 90px;
+        width: 90px;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-circle {
+        height: 70px;
+        width: 70px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+  
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    background: #003366;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    float: left;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+  
+  .hero::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .booking-form h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+  }  
+  
+  .booking-form input,
+  .booking-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+  }
+  
+  .booking-form button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .services {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .cta {
+    background: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff9900;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .checkout-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  .banner {
+    background-color: #eee;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .banner h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    color: #666;
+  }
+  /*style for confirmation page*/
+  .confirmation-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .confirmation-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .confirmation-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-home {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .btn-home:hover {
+    background-color: #003366;
+  }
+  .price-box {
+    margin-top: 15px;
+    font-size: 18px;
+    background: #f4f4f4;
+    padding: 10px 15px;
+    border-left: 5px solid #003366;
+    border-radius: 5px;
+  }
+  .checkout-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .checkout-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-form label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .booking-form select,
+  .booking-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  
+  .booking-form button {
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #003366;
+  }
+/* Styling Passenger Info Section Form */
+.PassengerInfo {
+  padding: 60px 20px;
+  text-align: left;
+  background-color: #ffffff;
+  margin: 40px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.PassengerInfo h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: center;
+}
+
+.PassengerInfo label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.PassengerInfo input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.PassengerInfo select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+/* Booking section payment design*/
+.booking-section {
+  background-color: #f7f7f7;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.booking-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.booking-section label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.booking-section select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.price-display {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #003366;
+}
+
+/*Billing section*/
+.PaymentSection {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.PaymentInfo h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #003366;
+  font-size: 26px;
+}
+
+.PaymentInfo label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.PaymentInfo input,
+.PaymentInfo select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.PaymentInfo button {
+  margin-top: 30px;
+  background-color: #003366;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.PaymentInfo button:hover {
+  background-color: #00509e;
+}
+/* Back to Projects bar */
+.back-to-projects-bar {
+    background-color: #003366;
+    text-align: center;
+    padding: 5px 0;
+}
+
+    .back-to-projects-bar a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .back-to-projects-bar a:hover {
+            text-decoration: underline;
+        }
