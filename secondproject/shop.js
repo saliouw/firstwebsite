@@ -68,7 +68,20 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             localStorage.setItem("cart", JSON.stringify(cart));
-            alert(`${item.name} added to cart`);
+            showCartToast(`${item.name} added to cart`);
+    
         });
     });
-});
+
+    // ===== Toast function =====
+    function showCartToast(message) {
+        const toast = document.getElementById("cart-toast");
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3000);
+
+    }
+})

@@ -8,6 +8,7 @@
     <link href="styles.css" rel="stylesheet">
     <script src="shop.js"></script>
     <script src="cart.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header-->
@@ -132,7 +133,7 @@
                     <img src="images/products/maggi.jpg" alt="maggi">
                     <h4>maggi</h4>
                     <p>$6.49</p>
-                    <button  class="buy-btn" data-name="garri" data-price="6.49">Add to Cart</button>
+                    <button class="buy-btn" data-name="garri" data-price="6.49">Add to Cart</button>
                 </div>
 
                 <!-- Product Card 8 -->
@@ -150,6 +151,8 @@
     <!-- Call to Action -->
     <div class="start-shopping-container">
         <a href="checkout.html" class="start-shopping-btn">Go to Checkout</a>
+    </div>
+    <div class="start-shopping-container">
         <a href="cart.html" class="start-shopping-btn">Go to Cart</a>
     </div>
 
@@ -198,13 +201,22 @@
     </footer>
 
     <!--scrollup function-->
-    <div class="scrollup" id="scrollUpBtn" title="Go to top">
-        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <path d="M16 25.3337V6.66699" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M6.66663 16.0003L16 6.66699L25.3333 16.0003" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <a href="cart.html" class="scrollup" id="scrollUpBtn" title="Go to Cart">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M6 6h15l-1.5 9h-13z" stroke="#1e3a1e" stroke-width="2" fill="none" />
+            <circle cx="9" cy="20" r="1.5" fill="#1e3a1e" />
+            <circle cx="18" cy="20" r="1.5" fill="#1e3a1e" />
         </svg>
-        <span>Top</span>
-    </div>
+        <span>Cart</span>
+    </a>
+
+    <!--====SCROLL UP SECTION - REPURPOSED TO A CART ICON =======-->
+    <a href="cart.html" class="scrollup" id="scrollUpBtn" title="Go to Cart">
+        <img src="images/icons/cart-icon.svg" alt="Cart" style="width: 32px; height: 32px;" />
+        <span>Cart</span>
+    </a>
+
+    <div id="cart-toast" class="toast">Item added to cart!</div>
 
 </body>
 </html>
