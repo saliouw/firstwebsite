@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1100px; /* limits how wide the nav spreads */
+    max-width: 1200px; /* limits how wide the nav spreads */
 }
 
 .logo {
@@ -309,3 +309,131 @@ button {
     button:hover {
         background-color: #005599;
     }
+
+/* =================tracking page ==================*/
+.tracking-page {
+    background: url('images/track-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.tracking-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracking-form-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(6px);
+}
+
+    .tracking-form-box h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .tracking-form-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #ccc;
+    }
+
+    .tracking-form-box input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .tracking-form-box button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .tracking-form-box button:hover {
+            background-color: #0056cc;
+        }
+/* =================End tracking page ==================*/
+
+/* ================ Quote Page Styles ================= */
+.quote-page {
+    background-color: #f7f9fc;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.quote-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+    .quote-container h1 {
+        color: #003366;
+        margin-bottom: 10px;
+    }
+
+    .quote-container p {
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+    .quote-form input,
+    .quote-form select,
+    .quote-form textarea {
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .quote-form button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .quote-form button:hover {
+            background-color: #0056cc;
+        }
+/* ================ End Quote Page Styles ================= */
