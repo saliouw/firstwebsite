@@ -8,13 +8,17 @@ body {
       background-color: #f9f9f9;
     }
 header {
-    background-color: black;
+    position: relative;
+    z-index: 10;
+    background-color: white;
     padding: 20px;
     display: flex;
     justify-content: center; /* center everything inside header */
 }
 
 .header-content {
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -483,108 +487,90 @@ button {
 /* ================ End Quote Page Styles ================= */
 /* ============== Responsive Styles ============== */
 
+/* Header container */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Nav menu (desktop default) */
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        background-color: #004080;
+    }
+
+        header nav a:hover {
+            background-color: #0066cc;
+        }
+
+.quote-btn {
+    background-color: #f48024;
+    color: white !important;
+}
+
+    .quote-btn:hover {
+        background-color: #e66a00;
+    }
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+    .hamburger {
+        display: block;
+        z-index: 1001;
     }
 
-    .header-content {
+    header nav {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-        nav a {
-            margin: 10px 0;
-            font-size: 1rem;
-        }
-
-    .quote-btn {
-        margin-left: 0;
-        margin-top: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        text-align: center;
+        background-color: #003366;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        padding: 15px;
-    }
-
-    .service-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-btn,
-    .main-btn2 {
-        font-size: 1.2rem;
-        padding: 10px 20px;
-    }
-
-    .dropdown {
-        width: 90%;
-        left: 5%;
-        transform: none;
-    }
-
-    .service-detail {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .service-text h3 {
-        font-size: 1.5rem;
-    }
-
-    .service-text p {
-        font-size: 1rem;
-    }
-
-    .tracking-form-box {
-        padding: 20px;
-    }
-
-        .tracking-form-box h1 {
-            font-size: 1.5rem;
+        header nav.nav-hidden {
+            display: none;
         }
 
-        .tracking-form-box button {
+        header nav.nav-visible {
+            display: flex;
+        }
+
+        header nav a {
+            text-align: center;
+            padding: 12px 20px;
             font-size: 1rem;
-            padding: 10px 15px;
-        }
-
-    .quote-container {
-        padding: 20px;
-    }
-
-    .quote-form button {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .modal-content {
-        padding: 20px;
-    }
-
-        .modal-content button {
-            width: 100%;
-            padding: 12px;
         }
 }
