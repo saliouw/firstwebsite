@@ -15,7 +15,7 @@
         </div>
         <div class="container header-flex">
             <a href="index.html" class="logo-circle">
-                <img src="images/aconlogo-tr.png" alt="RideConnect Logo" class="logo" />
+                <img src="images/acon-transport.png" alt="RideConnect Logo" class="logo" />
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -26,40 +26,54 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <div class="container">
-            <h2>Book a Ride Across States</h2>
-            <p>Fast, Comfortable, and Reliable Car Travel</p>
 
-            <form class="booking-form" action="checkout.html" method="get">
-                <section class="booking-section">
-                    <h3>Booking Details</h3>
+    <!-- Banner Section with Background Image -->
+    <section class="departure-banner">
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <h1>Book Your Ride Across States</h1>
+                <p>Comfortable, reliable transportation from Ohio to major U.S. cities. Choose your departure below and travel stress-free.</p>
+            </div>
+        </div>
+    </section>
+<!-- ================ departure dashboard ================-->
+    <section class="departure-dashboard">
+        <h2>Available Departures</h2>
+        <p>Select your route and book your ride</p>
+        <div class="departure-list">
 
-                    <label for="destination">Destination:</label>
-                    <select id="destination" name="destination" required>
-                        <option value="">Select Destination</option>
-                        <option value="columbus">Columbus</option>
-                        <option value="philadelphia">Philadelphia</option>
-                        <option value="newyork">New York City</option>
-                        <option value="newjersey">New Jersey</option>
-                        <option value="chicago">Chicago (IL)</option>
-                    </select>
+            <!-- Columbus to New York -->
+            <div class="departure-card">
+                <h3>Columbus → New York</h3>
+                <p>Next Departure: <strong>6:00 AM</strong></p>
+                <p>Estimated Price: <strong>$120</strong></p>
+                <a href="checkout.html?from=Columbus&to=New York&time=6:00AM&price=120" class="book-btn">Book Now</a>
+            </div>
 
-                    <label for="carType">Ride Type:</label>
-                    <select id="carType" name="carType" required>
-                        <option value="">Select Ride Type</option>
-                        <option value="shared">Shared Ride</option>
-                        <option value="sedan">Solo Sedan</option>
-                        <option value="suv">Solo SUV</option>
-                    </select>
+            <!-- Columbus to Philadelphia -->
+            <div class="departure-card">
+                <h3>Columbus → Philadelphia</h3>
+                <p>Next Departure: <strong>7:30 AM</strong></p>
+                <p>Estimated Price: <strong>$105</strong></p>
+                <a href="checkout.html?from=Columbus&to=Philadelphia&time=7:30AM&price=105" class="book-btn">Book Now</a>
+            </div>
 
-                    <p class="price-display">
-                        Estimated Price: $<span id="totalPrice">0.00</span>
-                    </p>
-                </section>
+            <!-- Cincinnati to Chicago -->
+            <div class="departure-card">
+                <h3>Cincinnati → Chicago</h3>
+                <p>Next Departure: <strong>8:00 AM</strong></p>
+                <p>Estimated Price: <strong>$95</strong></p>
+                <a href="checkout.html?from=Cincinnati&to=Chicago&time=8:00AM&price=95" class="book-btn">Book Now</a>
+            </div>
 
-                <button type="submit">Book Now</button>
-            </form>
+            <!-- Cincinnati to New York -->
+            <div class="departure-card">
+                <h3>Cincinnati → New York</h3>
+                <p>Next Departure: <strong>9:00 AM</strong></p>
+                <p>Estimated Price: <strong>$130</strong></p>
+                <a href="checkout.html?from=Cincinnati&to=New York&time=9:00AM&price=130" class="book-btn">Book Now</a>
+            </div>
+
         </div>
     </section>
 
@@ -89,7 +103,7 @@
     <section class="cta">
         <div class="container">
             <h3>Ready to hit the road?</h3>
-            <a href="file:///C:/Users/pauli/Desktop/AconExpress/checkout.html" class="cta-button">Book Your Ride</a>
+            <a href="checkout.html" class="cta-button">Book Your Ride</a>
         </div>
     </section>
     <!-- ===========FOOTER SECTION =============-->

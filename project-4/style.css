@@ -246,6 +246,7 @@
   .banner h1 {
     font-size: 32px;
     margin-bottom: 10px;
+    
   }
   
   .banner p {
@@ -497,3 +498,81 @@
     margin-top: 10px;
     font-size: 1.2em;
 }
+.departure-dashboard {
+    padding: 40px 20px;
+    background-color: #f5f9ff;
+    text-align: center;
+}
+
+    .departure-dashboard h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+.departure-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.departure-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+    .departure-card h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+.book-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+    .book-btn:hover {
+        background-color: #005599;
+    }
+.departure-banner {
+    position: relative;
+    background: url('images/banner-img.png') center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+    max-width: 800px;
+
+}
+
+    .banner-content h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+
+    .banner-content p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
