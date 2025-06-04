@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get a Quote | ACON Logistics</title>
     <link rel="stylesheet" href="styles.css" />
+    
 </head>
 <body>
     <!--==============Header Menu ==================-->
@@ -28,7 +29,7 @@
             <h1>Request a Shipping Quote</h1>
             <p>Fill out the form below and we’ll get back to you with an estimate</p>
 
-            <form action="quote-success.html" method="POST" class="quote-form">
+            <form id="quoteForm" class="quote-form">
                 <label for="service">Choose a Service:</label>
                 <select id="service" name="service" required>
                     <option value="">-- Select Service --</option>
@@ -42,14 +43,50 @@
                 <input type="tel" name="phone" placeholder="Phone Number" required />
                 <input type="text" name="pickup" placeholder="Pickup City or Zip Code" required />
                 <input type="text" name="destination" placeholder="Destination City or Country" required />
-
                 <textarea name="details" rows="5" placeholder="Describe your shipment (weight, type of goods, etc.)" required></textarea>
 
                 <button type="submit">Submit Quote Request</button>
             </form>
+
+            <!-- Confirmation Modal -->
+            <div id="confirmationModal" class="modal">
+                <div class="modal-content">
+                    <h2>Quote Submitted</h2>
+                    <p>Thank you! Your request has been received. We'll get back to you soon.</p>
+                    <button onclick="closeModal()">OK</button>
+                </div>
+            </div>
+
         </div>
     </section>
     <!--==================FOOTER SECTION ==========================-->
+
+    <script>
+        const form = document.getElementById('quoteForm');
+        const modal = document.getElementById('confirmationModal');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Optional: simulate sending data
+            setTimeout(() => {
+                modal.style.display = 'flex';
+                form.reset();
+            }, 500);
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Optional: close modal on outside click
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
     <footer>
         &copy; 2025 ACON Group. All rights reserved.
     </footer>
