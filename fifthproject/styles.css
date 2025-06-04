@@ -1,32 +1,54 @@
 ﻿/* ===============navigation bar ==============*/
+html {
+    scroll-behavior: smooth;
+}
 body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
     }
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* center everything inside header */
+}
 
-    header {
-      background-color: black;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px; /* limits how wide the nav spreads */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ===get a quote button ==================*/
+.quote-btn {
+    background-color: #007bff;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+    .quote-btn:hover {
+        background-color: #0056cc;
     }
 
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-/* ================HEADER STYLE ================*/
+/* ================Hero Banner STYLE ================*/
 .hero {
     background: linear-gradient(to right, #f9f9f9, #fff);
     padding: 100px 20px;
@@ -125,7 +147,7 @@ body {
     }
 
 
-/* ================HEADER END   ================*/
+/* ================ Hero banner END   ================*/
 
 /* ================SERVICES STYLE ===============*/
 
@@ -229,3 +251,61 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+/*======GET A QUOTE ==================*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    padding: 20px;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+.service-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+    .service-options label {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #005599;
+    }

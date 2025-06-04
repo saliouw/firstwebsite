@@ -9,17 +9,20 @@
 <body>
     <!--=========header menu ==================-->
     <header>
-        <div class="logo">ACON Group</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="services.html">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Partner Stores</a>
-            <a href="#">Contact</a>
-            <a href="../secondproject/shop.html">Shop Now</a>
-            <a href="#">Checkout</a>
-            <a href="#">Track Shipment</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo">ACON Logistics</div>
+            <nav>
+                <!-- Back to Projects  -->
+                <a href="../index.html">Back to Projects</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="../secondproject/index.html">KoraRush</a>
+                <a href="../secondproject/shop.html">Shop Now</a>
+                <a href="#quotes" class="quote-btn">Get a Quote</a>
+            </nav>
+        </div>
     </header>
     <!--==============   END header menu ==================-->
     <!--========================HEADER =======================-->
@@ -87,6 +90,30 @@
         </div>
     </section>
     <!--========================END SERVICES SECTION =================-->
+    <!--=====================GET A QUOTE ====================-->
+    <div class="quote-container" id="quotes">
+        <h1>Request a Quote</h1>
+
+        <form action="submit-quote.php" method="POST">
+            <label for="service">Choose a Service:</label>
+            <div class="service-options">
+                <label><input type="radio" name="service" value="AIR" required> Air Freight</label>
+                <label><input type="radio" name="service" value="OCEAN"> Ocean Freight</label>
+                <label><input type="radio" name="service" value="GP_EXPRESS"> GP Express (Luggage & Documents)</label>
+            </div>
+
+            <input type="text" name="fullname" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="text" name="pickup" placeholder="Pickup City or Zip Code" required />
+            <input type="text" name="destination" placeholder="Destination City or Country" required />
+
+            <textarea name="details" placeholder="Describe your shipment (weight, size, type of items)" rows="5" required></textarea>
+
+            <button type="submit">Get My Quote</button>
+        </form>
+    </div>
+    <!--=====================END GET A QUOTE ====================-->
     <!--==================FOOTER SECTION ==========================-->
     <footer>
         &copy; 2025 ACON Group. All rights reserved.
