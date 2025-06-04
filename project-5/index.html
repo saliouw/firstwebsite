@@ -90,30 +90,14 @@
         </div>
     </section>
     <!--========================END SERVICES SECTION =================-->
-    <!--=====================GET A QUOTE ====================-->
-    <div class="quote-container" id="quotes">
-        <h1>Request a Quote</h1>
-
-        <form action="submit-quote.php" method="POST">
-            <label for="service">Choose a Service:</label>
-            <div class="service-options">
-                <label><input type="radio" name="service" value="AIR" required> Air Freight</label>
-                <label><input type="radio" name="service" value="OCEAN"> Ocean Freight</label>
-                <label><input type="radio" name="service" value="GP_EXPRESS"> GP Express (Luggage & Documents)</label>
-            </div>
-
-            <input type="text" name="fullname" placeholder="Full Name" required />
-            <input type="email" name="email" placeholder="Email Address" required />
-            <input type="tel" name="phone" placeholder="Phone Number" required />
-            <input type="text" name="pickup" placeholder="Pickup City or Zip Code" required />
-            <input type="text" name="destination" placeholder="Destination City or Country" required />
-
-            <textarea name="details" placeholder="Describe your shipment (weight, size, type of items)" rows="5" required></textarea>
-
-            <button type="submit">Get My Quote</button>
-        </form>
+    <!--scrollup function-->
+    <div class="scrollup" id="scrollUpBtn" title="Go to top">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <path d="M16 25.3337V6.66699" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6.66663 16.0003L16 6.66699L25.3333 16.0003" stroke="#1e3a1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Top</span>
     </div>
-    <!--=====================END GET A QUOTE ====================-->
     <!--==================FOOTER SECTION ==========================-->
     <footer>
         &copy; 2025 ACON Group. All rights reserved.
