@@ -126,3 +126,102 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
 }
+
+.comparison-table {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+    .comparison-table h2 {
+        text-align: center;
+        color: #009e60;
+        margin-bottom: 1rem;
+    }
+
+    .comparison-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .comparison-table th {
+        background-color: #e6f4ea;
+        color: #2c3e50;
+    }
+
+.compare-btn {
+    background-color: #f9dc5c;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+    .compare-btn:hover {
+        background-color: #ffe476;
+    }
+.education-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f5f9f6;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+    .education-section h2 {
+        text-align: center;
+        color: #009e60;
+        margin-bottom: 2rem;
+    }
+
+.edu-block {
+    margin-bottom: 2rem;
+}
+
+    .edu-block h3 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+
+    .edu-block p {
+        color: #444;
+        line-height: 1.6;
+    }
+
+.text-link {
+    color: #00796b;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.edu-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.edu-button {
+    background-color: #f9dc5c;
+    color: #2c3e50;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+    .edu-button:hover {
+        background-color: #ffe476;
+    }
