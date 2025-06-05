@@ -5,164 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolarSavingsHub | Go Green, Earn Green</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            background: #f5f9f6;
-            color: #2c3e50;
-        }
-
-        header {
-            background: linear-gradient(90deg, #009e60, #f9dc5c);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            background: #fff;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-            nav a {
-                text-decoration: none;
-                color: #009e60;
-                font-weight: bold;
-            }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1604537529428-15d3b01c5f99') ;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 1px 1px 4px #000;
-        }
-
-            .hero h1 {
-                font-size: 3rem;
-            }
-
-        .section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-        }
-
-        .cta {
-            background: #009e60;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 8px;
-            margin: 3rem auto;
-            width: 90%;
-        }
-
-            .cta a {
-                color: #f9dc5c;
-                font-weight: bold;
-                text-decoration: none;
-            }
-
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <h1>SolarSavingsHub</h1>
-        <p>Go Green, Earn Green — Discover Top Solar Deals & Earn Commissions</p>
-    </header>
 
-    <nav>
-        <a href="#top-deals">Top Deals</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+<body>
+
+    <header>
+        <h1>Welcome to SolarSavingsHub</h1>
+        <p>Learn, Compare & Save with Solar Energy Solutions</p>
+    </header>
+    <nav class="main-nav" >
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section class="hero">
-        <h1>Switch to Solar & Get Paid to Share</h1>
+    <section>
+        <h2>Why Solar?</h2>
+        <p>Solar energy is clean, renewable, and cost-effective. It reduces your utility bills, increases your home value, and helps the environment. Whether you're looking to power a home, charge a phone, or prepare for emergencies — solar is the future.</p>
+
+        <ul>
+            <li>✅ Slash your electric bills</li>
+            <li>✅ Power your RV or cabin off-grid</li>
+            <li>✅ Gain energy independence</li>
+            <li>✅ Reduce your carbon footprint</li>
+            <li>✅ Use solar gadgets for travel and emergencies</li>
+        </ul>
     </section>
 
-    <section class="section" id="top-deals">
+    <section>
+        <h2>Solar Use Cases</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <img src="images/home-solar.png" alt="Home Solar Panels" />
+                <h3>Residential Solar</h3>
+                <p>Install rooftop panels and battery backup to save money and protect against blackouts.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/solar-generator.png" alt="Solar Generator" />
+                <h3>Portable Power</h3>
+                <p>Use solar generators for camping, tailgating, or emergency backup at home.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/solar-lights.png" alt="Solar Lights" />
+                <h3>Outdoor & Garden</h3>
+                <p>Power your outdoor space with solar lights, fountains, and surveillance systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <h2>Top Solar Picks</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>EcoFlow Delta 2</h3>
-                <p>Best portable solar generator. Reliable backup power for home or travel.</p>
-                <a href="#">Shop Now</a>
-            </div>
-            <div class="card">
-                <h3>Renogy 200W Kit</h3>
-                <p>Perfect for beginners. Easy-to-install DIY solar kit for RV or cabin.</p>
-                <a href="#">Shop Now</a>
-            </div>
-            <div class="card">
-                <h3>SunPower Installation</h3>
-                <p>Get a free quote and $500 referral bonus. Premium solar panels for homes.</p>
-                <a href="#">Get Quote</a>
-            </div>
-        </div>
+        <p>We’ve partnered with the most trusted solar companies. Browse reviews and find what fits your lifestyle:</p>
+        <ul>
+            <li><strong>EcoFlow</strong> – Portable solar generators for home and outdoor</li>
+            <li><strong>Renogy</strong> – DIY solar kits for RVs, cabins, and more</li>
+            <li><strong>GoSun</strong> – Solar ovens, fridges, and prepper gear</li>
+            <li><strong>Amazon Solar</strong> – Affordable solar gadgets and accessories</li>
+            <li><strong>SunPower</strong> – Premium full-service residential solar</li>
+        </ul>
+        <a class="cta-button" href="partner.html">Explore Our Reviews</a>
     </section>
-
-    <section class="section" id="how-it-works">
-        <h2>How It Works</h2>
-        <p>We connect you to trusted solar products. Share links, earn commissions. It’s that simple.</p>
-    </section>
-
-    <section class="section" id="reviews">
-        <h2>Why Join Our Affiliate Program?</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Trusted Partners</h3>
-                <p>We only promote vetted, top-rated solar companies.</p>
-            </div>
-            <div class="card">
-                <h3>High Commissions</h3>
-                <p>Earn up to 10% per referral or fixed bonuses on installs.</p>
-            </div>
-            <div class="card">
-                <h3>Free Tools</h3>
-                <p>Get free banners, tracking links, and blog templates.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="cta">
-        <h2>Ready to Start Earning with Solar?</h2>
-        <p><a href="#">Join Our Affiliate Program Today</a></p>
-    </div>
 
     <footer>
-        <p>&copy; 2025 SolarSavingsHub. Powered by clean energy. Affiliate Disclosure applies.</p>
+        <p>&copy; 2025 SolarSavingsHub | Affiliate links may earn us a commission.</p>
     </footer>
+
 </body>
 </html>
